@@ -2,11 +2,11 @@
 
 public class eatthatapple 
 {
-    public static void main(String[] args) 
+
+    static void solution()
     {
         int apple, that, eat;
         int E, A, T, H, P, L;
-        int i;
 
         for(E = 1; E < 10; E++)
         {
@@ -40,7 +40,19 @@ public class eatthatapple
                 }
             }
         }
-        
+    }
+    
+    public static void main(String[] args) 
+    {
+        long startTime = System.nanoTime();
+        solution();
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);  //divide by 1000000 to get milliseconds.
+        duration = duration / 1000000;
+        System.out.println("Time to Exexcute function: " + duration + " milliseconds");
+
+
+
     }
 }
 

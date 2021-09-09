@@ -15,7 +15,6 @@ def solution():
                                 apple = a * 10000 + p * 1000 + p * 100 + l * 10 + e
                                 if eat + that == apple:
                                     allsolutions.append((eat, that, apple))
-
     return allsolutions
 
 
