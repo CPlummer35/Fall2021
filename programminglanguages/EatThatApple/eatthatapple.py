@@ -18,6 +18,7 @@ def solution():
     return allsolutions
 
 
+
 def distinct(*args):
     #checks to make sure all are distinct
     return len(set(args)) == len(args)
@@ -31,4 +32,4 @@ end = time.time()
 
 print("Time taken to execute:  {}s".format(end-start))
 
-## Time taken to execute: 
+## Time taken to execute: 807s
