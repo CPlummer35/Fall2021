@@ -30,7 +30,7 @@ int solution()
                                 apple = A * 10000 + P * 1000 + P * 100 + L * 10 + E;
                                 if(eat + that == apple)
                                 {
-                                    //cout << eat << " + " << that << " = " << apple << endl; // outputs 819 + 9219 = 100038
+                                    cout << eat << " + " << that << " = " << apple << endl; // outputs 819 + 9219 = 100038
                                 }
                             }
                         }
@@ -56,6 +56,6 @@ int main()
     auto duration = duration_cast<milliseconds>(stop - start);
     cout << "Time taken by function: " << duration.count() << " milliseconds" << endl;
 
-    //Time taken by function: 6471ms
+    //Time taken by function: 3235ms
 }
 
