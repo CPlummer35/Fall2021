@@ -45,7 +45,7 @@ public class eatthatapple
     public static void main(String[] args) 
     {
         long startTime = System.nanoTime();
-        for(int i = 0; i < 2000; i++)
+        for(int i = 0; i < 1000; i++)
         {
             solution();
         }
@@ -54,7 +54,7 @@ public class eatthatapple
         duration = duration / 1000000;
         System.out.println("Time to Exexcute function: " + duration + " milliseconds");
 
-        // Time to Execute Function: 1935 milliseconds
+        // Time to Execute Function: .964 seconds
     }
 }
 

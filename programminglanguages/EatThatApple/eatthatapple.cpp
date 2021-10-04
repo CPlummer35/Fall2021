@@ -47,7 +47,7 @@ int main()
 {
     auto start = high_resolution_clock::now();
 
-    for(int i = 0; i < 2000; i++)
+    for(int i = 0; i < 1; i++)
     {
         solution();
     }
@@ -56,6 +56,6 @@ int main()
     auto duration = duration_cast<milliseconds>(stop - start);
     cout << "Time taken by function: " << duration.count() << " milliseconds" << endl;
 
-    //Time taken by function: 3235ms
+    //Time taken by function: 3.2s
 }
 

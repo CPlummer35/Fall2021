@@ -7,7 +7,6 @@ int solution()
 {
     int send, more, money;
     int s, e, n, d, m, o, r, y;
-    int i;
 
     for(s = 1; s < 10; s++)
     {
@@ -25,18 +24,18 @@ int solution()
                             {
                                 for(y = 0; y < 10; y++)
                                 {
-                                    if(s != e || s != n || s != d || s != m || s != o || s != r ||
-                                    s != y || e != n || e != d || e != m || e != o || e != r ||
-                                    e != y || n != d || n != m || n != o || n != r || n != y ||
-                                    d != m || d != o || d != r || d != y || m != o || m != r || 
-                                    m != y || o != r || o != y || r != y)
+                                    if(s != e || s != n || s != d || s != m || s != o || s != r || s != y || 
+                                    e != n || e != d || e != m || e != o || e != r || e != y || n != d || 
+                                    n != m || n != o || n != r || n != y || d != m || d != o || d != r || d != y 
+                                    || m != o || m != r || m != y || o != r || o != y || r != y)
                                     {
                                         send = s * 1000 + e * 100 + n * 10 + d;
+                                        //cout << send << endl;
                                         more = m * 1000 + o * 100 + r * 10 + e;
                                         money = m * 10000 + o * 1000 + n * 100 + e * 10 + y;
                                         if(send + more == money)
                                         {
-                                            //cout << send << " + " << more << " = " << money << endl;
+                                            cout << send << " + " << more << " = " << money << endl; //
                                         }
                                     }
                                 }
@@ -63,6 +62,6 @@ int main()
     auto duration = duration_cast<seconds>(stop - start);
     cout << "Time taken by function: " << duration.count() << " seconds" << endl;
 
-    //Time taken by function: 337 seconds
+    //Time taken by function: 293 seconds
 }
 

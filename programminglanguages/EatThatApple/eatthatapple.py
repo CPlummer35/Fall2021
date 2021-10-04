@@ -25,11 +25,11 @@ def distinct(*args):
 
 start = time.time()
 
-for x in range(0, 2000):
+for x in range(0, 1000):
     solution()
 
 end = time.time()
 
 print("Time taken to execute:  {}s".format(end-start))
 
-## Time taken to execute: 807s
+## Time taken to execute: 400s

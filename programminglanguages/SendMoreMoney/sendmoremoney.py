@@ -30,7 +30,7 @@ def distinct(*args):
 start = time.time()
 
 for x in range(0, 1000):
-    solution()
+    print(solution()) ## outputs 9567 + 1085 = 10652
 
 end = time.time()
 

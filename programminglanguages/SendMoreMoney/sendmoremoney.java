@@ -34,9 +34,9 @@ public class sendmoremoney
                                             money = m * 10000 + o * 1000 + n * 100 + e * 10 + y;
                                             if(send + more == money)
                                             {
-                                                System.out.println(send);
-                                                System.out.println(more);
-                                                System.out.println(money);
+                                                //System.out.println(send);
+                                                //System.out.println(more);
+                                                //System.out.println(money);
                                             }
                                         }
                                     }
@@ -52,7 +52,7 @@ public class sendmoremoney
     public static void main(String[] args) 
     {
         long startTime = System.nanoTime();
-        for(int i = 0; i < 2000; i++)
+        for(int i = 0; i < 1000; i++)
         {
             solution();
         }
@@ -61,7 +61,7 @@ public class sendmoremoney
         duration = duration / 1000000;
         System.out.println("Time to Exexcute function: " + duration + " milliseconds");
 
-        // Time to Execute Function: 127.7 seconds milliseconds
+        // Time to Execute Function: 63.3 seconds
     }
 }
 
