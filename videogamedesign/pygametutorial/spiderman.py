@@ -10,12 +10,12 @@ GAME_SPEED = 10
 GROUND_WIDTH = 2 * SCREEN_WIDTH
 GROUND_HEIGHT = 100
 
-PIPE_WIDTH = 80
+PIPE_WIDTH = 100
 PIPE_HEIGHT = 500
 
 PIPE_GAP = 200
 
-class Bird(pygame.sprite.Sprite):
+class Bird(pygame.sprite.Sprite): ## Sprite class is intended to be used as a base class for the different types of objects in the game.
 
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -52,7 +52,7 @@ class Pipe(pygame.sprite.Sprite):
     def __init__(self, inverted, xpos, ysize):
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = pygame.image.load('pipe-red.png').convert_alpha()
+        self.image = pygame.image.load('building.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (PIPE_WIDTH,PIPE_HEIGHT))
 
         self.rect = self.image.get_rect()
@@ -74,7 +74,7 @@ class Ground(pygame.sprite.Sprite):
     def __init__(self, xpos):
         pygame.sprite.Sprite.__init__(self)
 
-        self.image = pygame.image.load('base.png').convert_alpha()
+        self.image = pygame.image.load('black.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (GROUND_WIDTH, GROUND_HEIGHT))
 
         self.mask = pygame.mask.from_surface(self.image)
@@ -99,7 +99,7 @@ def get_random_pipes(xpos):
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-BACKGROUND = pygame.image.load('background-day.png')
+BACKGROUND = pygame.image.load('citybackground.png')
 BACKGROUND = pygame.transform.scale(BACKGROUND, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 bird_group = pygame.sprite.Group()
